@@ -8,6 +8,6 @@ app.http('httpTrigger1', {
 
         const name = request.query.get('name') || await request.text() || 'Abhijit';
 
-        return { body: `Hello, ${name}!` };
+        return { body: `This is deployed via git actions - , ${name}!` };
     }
 });
