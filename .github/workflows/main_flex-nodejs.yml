@@ -66,6 +66,8 @@ jobs:
           app-name: 'Flex-nodejs'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_52AB35F749E843668B50647DA081087E }}
           sku: 'flexconsumption'
+          remote-build: true  # Explicitly enable remote build
         
